@@ -2,11 +2,11 @@
 <html class="no-js" lang="en">
 
 
-<!-- Mirrored from htmldemo.net/monsta/monsta/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Jul 2024 23:00:12 GMT -->
+<!-- Mirrored from htmldemo.net/monsta/monsta/my-account.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Jul 2024 23:00:05 GMT -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Monsta - login</title>
+    <title>Monsta - my account</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
@@ -14,7 +14,7 @@
     
     <!-- CSS 
     ========================= -->
-   
+
 
     <!-- Plugins CSS -->
     <link rel="stylesheet" href="assets/css/plugins.css">
@@ -24,6 +24,7 @@
 
     <!--modernizr min js here-->
     <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+    
 
 </head>
 
@@ -364,7 +365,7 @@
                                                 <li><a href="index-10.html">Home 10</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="shop.html">shop <i class="fa fa-angle-down"></i></a>
+                                        <li class="active"><a href="shop.html">shop <i class="fa fa-angle-down"></i></a>
                                             <ul class="mega_menu">
                                                 <li><a href="#">Shop Layouts</a>
                                                     <ul>
@@ -408,7 +409,7 @@
                                             </ul>
                                         </li>
                                         <li><a href="portfolio.html">portfolio</a></li>
-                                        <li class="active"><a href="#">pages <i class="fa fa-angle-down"></i></a>
+                                        <li><a href="#">pages <i class="fa fa-angle-down"></i></a>
                                             <ul class="sub_menu pages">
                                                 <li><a href="about.html">About Us</a></li>
                                                 <li><a href="services.html">services</a></li>
@@ -454,62 +455,156 @@
     </div>
     <!--breadcrumbs area end-->
     
-    <!-- customer login start -->
-    <div class="customer_login">
-        <div class="container">
-            <div class="row">
-               <!--login area start-->
-                <div class="col-lg-6 col-md-6">
-                    <div class="account_form">
-                        <h2>login</h2>
-                        <form action="#">
-                            <p>   
-                                <label>Username or email <span>*</span></label>
-                                <input type="text">
-                             </p>
-                             <p>   
-                                <label>Passwords <span>*</span></label>
-                                <input type="password">
-                             </p>   
-                            <div class="login_submit">
-                               <a href="#">Lost your password?</a>
-                                <label for="remember">
-                                    <input id="remember" type="checkbox">
-                                    Remember me
-                                </label>
-                                <button type="submit">login</button>
-                                
+    <!-- my account start  -->
+    <section class="main_content_area">
+        <div class="container">   
+            <div class="account_dashboard">
+                <div class="row">
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <!-- Nav tabs -->
+                        <div class="dashboard_tab_button">
+                            <ul role="tablist" class="nav flex-column dashboard-list">
+                                <li><a href="#dashboard" data-bs-toggle="tab" class="nav-link active">Dashboard</a></li>
+                                <li> <a href="#orders" data-bs-toggle="tab" class="nav-link">Orders</a></li>
+                                <li><a href="#downloads" data-bs-toggle="tab" class="nav-link">Downloads</a></li>
+                                <li><a href="#address" data-bs-toggle="tab" class="nav-link">Addresses</a></li>
+                                <li><a href="#account-details" data-bs-toggle="tab" class="nav-link">Account details</a></li>
+                                <li><a href="login.html" class="nav-link">logout</a></li>
+                            </ul>
+                        </div>    
+                    </div>
+                    <div class="col-sm-12 col-md-9 col-lg-9">
+                        <!-- Tab panes -->
+                        <div class="tab-content dashboard_content">
+                            <div class="tab-pane fade show active" id="dashboard">
+                                <h3>Dashboard </h3>
+                                <p>From your account dashboard. you can easily check &amp; view your <a href="#">recent orders</a>, manage your <a href="#">shipping and billing addresses</a> and <a href="#">Edit your password and account details.</a></p>
                             </div>
-
-                        </form>
-                     </div>    
-                </div>
-                <!--login area start-->
-
-                <!--register area start-->
-                <div class="col-lg-6 col-md-6">
-                    <div class="account_form register">
-                        <h2>Register</h2>
-                        <form action="#">
-                            <p>   
-                                <label>Email address  <span>*</span></label>
-                                <input type="text">
-                             </p>
-                             <p>   
-                                <label>Passwords <span>*</span></label>
-                                <input type="password">
-                             </p>
-                            <div class="login_submit">
-                                <button type="submit">Register</button>
+                            <div class="tab-pane fade" id="orders">
+                                <h3>Orders</h3>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Order</th>
+                                                <th>Date</th>
+                                                <th>Status</th>
+                                                <th>Total</th>
+                                                <th>Actions</th>	 	 	 	
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>May 10, 2018</td>
+                                                <td><span class="success">Completed</span></td>
+                                                <td>$25.00 for 1 item </td>
+                                                <td><a href="cart.html" class="view">view</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>May 10, 2018</td>
+                                                <td>Processing</td>
+                                                <td>$17.00 for 1 item </td>
+                                                <td><a href="cart.html" class="view">view</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
-                        </form>
-                    </div>    
+                            <div class="tab-pane fade" id="downloads">
+                                <h3>Downloads</h3>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Product</th>
+                                                <th>Downloads</th>
+                                                <th>Expires</th>
+                                                <th>Download</th>	 	 	 	
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Shopnovilla - Free Real Estate PSD Template</td>
+                                                <td>May 10, 2018</td>
+                                                <td><span class="danger">Expired</span></td>
+                                                <td><a href="#" class="view">Click Here To Download Your File</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Organic - ecommerce html template</td>
+                                                <td>Sep 11, 2018</td>
+                                                <td>Never</td>
+                                                <td><a href="#" class="view">Click Here To Download Your File</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="address">
+                               <p>The following addresses will be used on the checkout page by default.</p>
+                                <h4 class="billing-address">Billing address</h4>
+                                <a href="#" class="view">Edit</a>
+                                <p><strong>Bobby Jackson</strong></p>
+                                <address>
+                                  <span><strong>City:</strong> Seattle</span>,
+                                  <br>
+                                  <span><strong>State:</strong> Washington(WA)</span>,
+                                  <br>
+                                  <span><strong>ZIP:</strong> 98101</span>,
+                                  <br>
+                                  <span><strong>Country:</strong> USA</span>
+                                </address>   
+                            </div>
+                            <div class="tab-pane fade" id="account-details">
+                                <h3>Account details </h3>
+                                <div class="login">
+                                    <div class="login_form_container">
+                                        <div class="account_login_form">
+                                            <form action="#">
+                                                <p>Already have an account? <a href="#">Log in instead!</a></p>
+                                                <div class="input-radio">
+                                                    <span class="custom-radio"><input type="radio" value="1" name="id_gender"> Mr.</span>
+                                                    <span class="custom-radio"><input type="radio" value="1" name="id_gender"> Mrs.</span>
+                                                </div> <br>
+                                                <label>First Name</label>
+                                                <input type="text" name="first-name">
+                                                <label>Last Name</label>
+                                                <input type="text" name="last-name">
+                                                <label>Email</label>
+                                                <input type="text" name="email-name">
+                                                <label>Password</label>
+                                                <input type="password" name="user-password">
+                                                <label>Birthdate</label>
+                                                <input type="text" placeholder="MM/DD/YYYY" value="" name="birthday">
+                                                <span class="example">
+                                                  (E.g.: 05/31/1970)
+                                                </span>
+                                                <br>
+                                                <span class="custom_checkbox">
+                                                    <input type="checkbox" value="1" name="optin">
+                                                    <label>Receive offers from our partners</label>
+                                                </span>
+                                                <br>
+                                                <span class="custom_checkbox">
+                                                    <input type="checkbox" value="1" name="newsletter">
+                                                    <label>Sign up for our newsletter<br><em>You may unsubscribe at any moment. For that purpose, please find our contact info in the legal notice.</em></label>
+                                                </span>
+                                                <div class="save_button primary_btn default_button">
+                                                    <a href="#">Save</a>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!--register area end-->
-            </div>
-        </div>    
-    </div>
-    <!-- customer login end -->
+            </div>  
+        </div>        	
+    </section>			
+    <!-- my account end   --> 
 
     <!--footer area start-->
     <footer class="footer_widgets footer_other">
@@ -645,29 +740,29 @@
 ============================================ -->
 
 <!-- Plugins JS -->
-<script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
-<script src="assets/js/popper.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/plugins.js"></script>
-<script src="assets/js/owl.carousel.main.js"></script>
-<script src="assets/js/jquery.nice.select.js"></script>
-<script src="assets/js/scrollup.js"></script>
-<script src="assets/js/ajax.chimp.js"></script>
-<script src="assets/js/jquery.ui.js"></script>
-<script src="assets/js/jquery.elevatezoom.js"></script>
-<script src="assets/js/imagesloaded.js"></script>
-<script src="assets/js/isotope.main.js"></script>
-<script src="assets/js/jqquery.ripples.js"></script>
-<script src="assets/js/jquery.cookie.js"></script>
-<script src="assets/js/bpopup.js"></script>
+<script src="/joyeriatemplate/EternalRelics/assets/js/vendor/jquery-3.4.1.min.js"></script>
+<script src="/joyeriatemplate/EternalRelics/assets/js/popper.js"></script>
+<script src="/joyeriatemplate/EternalRelics/assets/js/bootstrap.min.js"></script>
+<script src="/joyeriatemplate/EternalRelics/assets/js/plugins.js"></script>
+<script src="/joyeriatemplate/EternalRelics/assets/js/owl.carousel.main.js"></script>
+<script src="/joyeriatemplate/EternalRelics/assets/js/jquery.nice.select.js"></script>
+<script src="/joyeriatemplate/EternalRelics/assets/js/scrollup.js"></script>
+<script src="/joyeriatemplate/EternalRelics/assets/js/ajax.chimp.js"></script>
+<script src="/joyeriatemplate/EternalRelics/assets/js/jquery.ui.js"></script>
+<script src="/joyeriatemplate/EternalRelics/assets/js/jquery.elevatezoom.js"></script>
+<script src="/joyeriatemplate/EternalRelics/assets/js/imagesloaded.js"></script>
+<script src="/joyeriatemplate/EternalRelics/assets/js/isotope.main.js"></script>
+<script src="/joyeriatemplate/EternalRelics/assets/js/jqquery.ripples.js"></script>
+<script src="/joyeriatemplate/EternalRelics/assets/js/jquery.cookie.js"></script>
+<script src="/joyeriatemplate/EternalRelics/assets/js/bpopup.js"></script>
 
 <!-- Main JS -->
-<script src="assets/js/main.js"></script>
+<script src="/joyeriatemplate/EternalRelics/assets/js/main.js"></script>
 
 
 
 </body>
 
 
-<!-- Mirrored from htmldemo.net/monsta/monsta/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Jul 2024 23:00:12 GMT -->
+<!-- Mirrored from htmldemo.net/monsta/monsta/my-account.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Jul 2024 23:00:05 GMT -->
 </html>
